@@ -2,7 +2,7 @@
 ;;
 ;;; sdnize.el -- Spacemacs documentation SDN exporter -*- lexical-binding: t -*-
 ;;
-;; Copyright (C) 2012-2018 Sylvain Benner & Contributors
+;; Copyright (C) 2012-2019 Sylvain Benner & Contributors
 ;;
 ;; Author: Eugene "JAremko" Yaremenko <w3techplayground@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
