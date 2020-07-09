@@ -5,6 +5,10 @@
 (require 'edn)
 (require 'json)
 
+;; Fix for https://github.com/expez/edn.el/issues/7
+(define-obsolete-variable-alias peg-stack peg--stack "1.0")
+
+
 (when (require 'undercover nil t)
   (undercover "sdnize*.el" (:report-type :codecov)))
 
