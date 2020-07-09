@@ -267,7 +267,8 @@ ROOT-DIR is the documentation root directory. Empty FILE-PATH ignored."
   (let ((exclude-re (regexp-opt (mapcar
                                  (apply-partially 'concat root-dir)
                                  sdnize-default-exclude))))
-    (delete 0 (mapcar (lambda (path) (or (string-match-p exclude-re path) path))
+    (delete 0 (mapcar (lambda (path) (or ;; `string-match-p' returns 0 when matched.
+                                 (string-match-p exclude-re path) path))
                       (directory-files-recursively root-dir "\\.org$")))))
 
 (defun sdnize/extract-options (arg-list)
